@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+.test {
+    /* color:red; */
+}
+
+.form-container {
+    /* border: 2px solid red; */
+    /* background-image: url('../../public/image/singer_1.svg'); */
+    /* background-position: center; */
+    background-color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.form-parent {
+    /* border:2px solid red; */
+    /* background-color:#ffffffe2; */
+    /* opacity:; */
+}
+
+.heading {
+    /* border:2px solid green; */
+    /* color:red; */
+    text-shadow: -1px 3px 6px rgba(0, 0, 0, 0.55);
+}
+
+.talent-heading {
+    font-family: "Rubik Wet Paint", system-ui;
+    background: linear-gradient(to right, #002D62, #006A4E);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+    /* Ensure it’s positioned */
+    z-index: 1;
+}
+
+.form-bg-img {
+    position: relative;
+    /* Make sure the parent is positioned */
+    overflow: hidden;
+    /* Prevent overflow if needed */
+}
+
+.form-bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../public/image/dance-bg.svg');
+    background-size: cover;
+    /* Adjust based on your needs */
+    background-position: center;
+    /* Center the image */
+    opacity: 0.2;
+    border: 2px solid red;
+    /* z-index: 0; Behind the content */
+    /* background-color:black; */
+}
+
+.form-bg-img>* {
+    position: relative;
+    /* Ensure the child content is above the pseudo-element */
+    z-index: 1;
+    /* Bring content in front */
+}
+
+.talent-submit-btn {
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 8px 30px;
+    transition: all 1s;
+}
+
+.talent-submit-btn:hover {
+    border: 1px solid green;
+    color: green;
+}

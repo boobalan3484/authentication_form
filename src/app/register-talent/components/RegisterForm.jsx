@@ -43,7 +43,7 @@ const RegisterForm = () => {
 
   return (
 
-    <div className='d-flex flex-column justify-content-center col'>
+    <div className='d-flex flex-column justify-content-center col' style={{border:'2px solid red'}}>
       <div className="row gap-3">
         <div className="col-5 d-none d-lg-flex flex-column justify-content-center">
           <h4 className="clip-heading mb-4 ">

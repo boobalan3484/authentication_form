@@ -11,12 +11,14 @@
     left: 10px;
     transform: translateY(-50%);
     font-size: 14px;
-    color: #6d6d6d;
+    /* color: #6d6d6d; */
+    color:#101820FF;
     padding: 0 5px;
     pointer-events: none;
     transition: .2s ease all;
+    background:white;
     /* background: #FCFCFD; */
-    background: #ffffffa5;
+    /* background: #ffffffa5; */
     backdrop-filter: blur(3px);
 }
 
@@ -28,7 +30,10 @@
     color: #333;
     padding: 0 15px;
     background: transparent;
-    border: 1px solid #dbdbdb;
+    /* border: 1px solid #dbdbdb; */
+    /* border: 1px solid #353935; */
+    border: 1px solid #353935;
+    background: white;
     outline: none;
     border-radius: 5px !important;
 }
@@ -40,7 +45,7 @@
 .talent-text-group label {
     position: absolute;
     top: 20%;
-    left: 10px;
+    left: 0px;
     transform: translateY(-50%);
     font-size: 14px;
     color: #6d6d6d;
@@ -59,16 +64,22 @@
     color: #333;
     padding: 10px 15px;
     background: transparent;
-    border: 1px solid #dbdbdb;
+    /* border: 1px solid #dbdbdb; */
+    border: 1px solid #353935;
     outline: none;
+    background-color:white;
     border-radius: 5px !important;
 }
 
 .talent-group input:focus,
 .talent-group select:focus,
 .talent-text-group textarea:focus {
-    box-shadow: 0px 0px 2px 1px #6f6fc0;
-    border: 1px solid #6f6fc0;
+    /* box-shadow: 0px 0px 2px 1px #6f6fc0;
+    border: 1px solid #6f6fc0; */
+    /* box-shadow: 0px 0px 2px 1px #F2AA4CFF; */
+    border: 1px solid #F2AA4CFF;
+    box-shadow: 2px 2px 5px 0px #F2AA4CFF;
+    /* box-shadow: #F2AA4CFF 0px 4px 16px, #F2AA4CFF 0px 8px 24px, #F2AA4CFF 0px 16px 56px; */
 }
 
 .talent-group input:focus~label,
@@ -79,12 +90,19 @@
 
 .talent-text-group textarea:focus~label,
 .talent-text-group textarea:valid~label {
-    top: 0;
+    top: 0px;
     font-size: 12px;
+    left:0px;
     /* background: #FCFCFD; */
-    background: #ffffffa5;
+    background-color:white;
+    /* border-left: 1px solid #F2AA4CFF;
+    border-top: 1px solid #F2AA4CFF;
+    border-right: 1px solid #F2AA4CFF; */
+    /* box-shadow: 2px 2px 5px 0px #F2AA4CFF; */
+    border-radius:2px 2px 0px 0px;
+    /* background: #ffffffa5; */
     /* background: transparent; */
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
 }
 
 

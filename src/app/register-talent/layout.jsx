@@ -5,8 +5,8 @@ import '@/styles/FormStyle.css'
 export default function Layout({ children }) {
     return (
         <main className="d-flex align-items-center main-height">
-            <div className="container rounded shadow p-3 section-container-bg">
-                <div className="row p-2 gap-2">
+            <div className="container rounded shadow p-3 section-container-bg" style={{border:'2px solid red'}}>
+                <div className="row p-2 gap-2"  style={{border:'2px solid green'}}>
                     {children}
                 </div>
             </div>
