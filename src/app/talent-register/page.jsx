@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form'
 import '@/styles/TalentFormStyle.css';
 import SelectField from '@/components/form/SelectField';
 import { useRouter } from 'next/navigation';
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 
 function page() {
@@ -44,21 +45,116 @@ function page() {
     return (
         <div className="container-fluid">
             <div className="row form-container">
+                <ParticlesBackground />
                 <div className="col-12 col-md-8 mx-auto text-center heading">
                     <h1 className='my-3 talent-heading'>Prove You are Talent to This World</h1>
                     <p className='heading-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at corporis autem doloremque nostrum esse, quam quisquam accusantium pariatur et veritatis aspernatur adipisci eum exercitationem illo ipsum quo placeat! Repellat?</p>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                        
+                <div className="col-12 col-md-6 mx-auto my-5">
+                    
+                    <div id="carouselExample" className="carousel slide" data-bs-ride="carousel">
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="animated-card">
+                                            <div className="slider-img-parent">
+                                                <img src="/image/mikesvg.svg" className='img-fluid w-100 h-100' alt="slider-img" />
+                                            </div>
+                                            <div className="pic-desc">
+                                                <p className='p-0 m-0 text-center mt-5 mb-4 mx-2 mx-md-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis a impedit perferendis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="animated-card">
+                                            <div className="slider-img-parent">
+                                                <img src="/image/headset.svg" className='img-fluid w-100 h-100' alt="slider-img" />
+                                            </div>
+                                            <div className="pic-desc">
+                                                <p className='p-0 m-0 text-center mt-5 mb-4 mx-2 mx-md-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis a impedit perferendis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="animated-card">
+                                            <div className="slider-img-parent">
+                                                <img src="/image/mikesvg.svg" className='img-fluid w-100 h-100' alt="slider-img" />
+                                            </div>
+                                            <div className="pic-desc">
+                                                <p className='p-0 m-0 text-center mt-5 mb-4 mx-2 mx-md-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis a impedit perferendis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button
+                            className="carousel-control-prev my-auto"
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="prev"
+                        >
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button
+                            className="carousel-control-next my-auto"
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide="next"
+                        >
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div>
+                {/* <div className="col-8">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="10000">
+                                <img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" class="d-block w-100" alt="..."/>
+                            </div>
+                            <div class="carousel-item" data-interval="2000">
+                                <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg" class="d-block w-100" alt="..."/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_1280.jpg" class="d-block w-100" alt="..."/>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div> */}
+                {/* <div className="col-8 col-md-12 mx-auto my-5" >
+                    <div className="animated-card">
+                        <div className="slider-img-parent">
+                            <img src="/image/mikesvg.svg" className='img-fluid w-100 h-100' alt="slider-img" />
+                        </div>
+                        <div className="pic-desc">
+                            <p className='p-0 m-0 text-center mt-5 mb-4 mx-2 mx-md-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis a impedit perferendis</p>
+                        </div>
+                    </div>
+                </div> */}
             </div>
             <div className="row  form-bg-img">
                 <div className="col-12 col-md-8 mx-auto my-5 form-parent">
                     <form onSubmit={handleSubmit(onSubmit)} className='py-3'>
                         {/* Section 1 */}
-                        <p className='p-0 mb-2 fw-semibold'> Applicant Info </p>
+                        <h2 className='p-0 mb-5 fw-semibold text-center form-title'>Talent Registration Form</h2>
                         <div className='row row-cols-md-2 row-cols-1 row-gap-2'>
                             <div className="col">
                                 <div className="talent-group">
