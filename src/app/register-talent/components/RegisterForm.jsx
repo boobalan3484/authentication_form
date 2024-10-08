@@ -6,6 +6,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import '@/styles/TalentFormStyle.css'
 import SelectField from '@/components/form/SelectField';
 import { useRouter } from 'next/navigation';
+import LottieCarousel from '@/components/LottieCarousel';
+import WaveSVG from '@/components/WaveAnimation';
 
 const RegisterForm = () => {
   const router = useRouter()
@@ -45,21 +47,72 @@ const RegisterForm = () => {
 
     <div className='d-flex flex-column justify-content-center col'>
       <div className="row gap-3">
-        <div className="col-5 d-none d-lg-flex flex-column justify-content-center">
-          <h4 className="clip-heading mb-4 ">
+        {/* <div className="col-5 d-none d-lg-flex flex-column justify-content-center"> */}
+        {/* <h4 className="clip-heading mb-4 ">
             Talent Registration
-          </h4>
-          <img
-            src="/image/login-dummy.png"
-            alt="Login Image"
-            className="img-fluid"
-          />
-          <p className='fw-semibold fs-6 text-secondary'>  Unleash Your Talent,  Embrace the Spotlight!</p>
-          {/* <p> Step Into the Limelight - Your Moment Awaits! </p> */}
-        </div>
+          </h4> */}
+        {/* <iframe src="/lottie-animations/MusicPlay.svg"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/e9390a48-ae5c-47e7-8931-eef3828586a1/om5Ho2E4MG.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/07429f32-f6e1-4419-bf09-3dcafeb1c1b2/mddtBqCaET.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/4a73a2dc-e313-440a-a993-c7e7db7a16c4/WYwo1sywlg.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/009d76d1-2bdf-402a-bbb3-37eb917d6f68/KUvm9yEiSP.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/edda69e8-ee00-499d-9691-af78735093cf/RQeZB3Bmzb.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/b6cf1671-7fe6-46e7-9c98-1eef1c36aa3c/Oxb32YcwRO.json"></iframe> */}
+        {/* </div> */}
 
+        {/* <div className='col-5 d-flex'> */}
+        {/* <iframe src="/lottie-animations/MusicPlay.svg"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/39f2bfe1-29f0-42a3-8af8-241dd05bfb55/7Z9SjqVg8h.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/e9390a48-ae5c-47e7-8931-eef3828586a1/om5Ho2E4MG.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/07429f32-f6e1-4419-bf09-3dcafeb1c1b2/mddtBqCaET.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/4a73a2dc-e313-440a-a993-c7e7db7a16c4/WYwo1sywlg.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/009d76d1-2bdf-402a-bbb3-37eb917d6f68/KUvm9yEiSP.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/edda69e8-ee00-499d-9691-af78735093cf/RQeZB3Bmzb.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/b6cf1671-7fe6-46e7-9c98-1eef1c36aa3c/Oxb32YcwRO.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/94f78f47-94c4-4a5c-94f7-97ff092868d8/jtK91mrIfa.json"></iframe> */}
+        {/* </div> */}
+
+        {/* <div className="lottie-container d-flex ">
+          <iframe
+            src="https://lottie.host/embed/39f2bfe1-29f0-42a3-8af8-241dd05bfb55/7Z9SjqVg8h.json"
+            title="Animation 1"
+            className="lottie-iframe"
+            loading='lazy'
+          ></iframe>
+          <iframe
+            src="https://lottie.host/embed/e9390a48-ae5c-47e7-8931-eef3828586a1/om5Ho2E4MG.json"
+            title="Animation 2"
+            className="lottie-iframe"
+            loading='lazy'
+
+          ></iframe>
+          <iframe
+            src="https://lottie.host/embed/07429f32-f6e1-4419-bf09-3dcafeb1c1b2/mddtBqCaET.json"
+            title="Animation 3"
+            className="lottie-iframe"
+            loading='lazy'
+
+          ></iframe>
+          <iframe
+            src="https://lottie.host/embed/4a73a2dc-e313-440a-a993-c7e7db7a16c4/WYwo1sywlg.json"
+            title="Animation 4"
+            className="lottie-iframe"
+            loading='lazy'
+
+          ></iframe>
+          <iframe
+            src="https://lottie.host/embed/94f78f47-94c4-4a5c-94f7-97ff092868d8/jtK91mrIfa.json"
+            title="Animation 5"
+            className="lottie-iframe"
+            loading='lazy'
+
+          ></iframe>
+        </div> */}
+
+        {/* <LottieCarousel /> */}
+        {/* <WaveSVG /> */}
         <div className="col">
-          <form onSubmit={handleSubmit(onSubmit)} className='py-3'>
+          <form onSubmit={handleSubmit(onSubmit)} className='py-3 w-50 mx-auto position-relative'>
             {/* Section 1 */}
             <p className='p-0 mb-2 fw-semibold'> Applicant Info </p>
             <div className='row row-cols-md-2 row-cols-1 row-gap-2'>
@@ -304,6 +357,23 @@ const RegisterForm = () => {
               </div>
             </div>
           </form>
+
+          <div className='position-absolute bottom-0 start-0'>
+            <iframe
+              src="https://lottie.host/embed/e9390a48-ae5c-47e7-8931-eef3828586a1/om5Ho2E4MG.json"
+              title="Animation 1"
+              className="lottie-iframe"
+            // loading='lazy'
+            ></iframe>
+          </div>
+          <div className='position-absolute bottom-0 end-0'>
+            <iframe
+              src="https://lottie.host/embed/39f2bfe1-29f0-42a3-8af8-241dd05bfb55/7Z9SjqVg8h.json"
+              title="Animation 1"
+              className="lottie-iframe"
+            // loading='lazy'
+            ></iframe>
+          </div>
         </div>
       </div>
     </div >

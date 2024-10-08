@@ -4,7 +4,7 @@ import '@/styles/FormStyle.css'
 
 export default function Layout({ children }) {
     return (
-        <main className="d-flex align-items-center main-height">
+        <main className="d-flex align-items-center h-100">
             <div className="container rounded shadow p-3 section-container-bg">
                 <div className="row p-2 gap-2">
                     {children}

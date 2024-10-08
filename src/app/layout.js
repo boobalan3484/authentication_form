@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="section-bg">
+      <body className="section-bg" style={{height:'100vh'}}>
         <CustomProvider>
           <ParticlesBackground />
           {children}
