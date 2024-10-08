@@ -1,0 +1,171 @@
+.talent-group,
+.talent-text-group {
+    position: relative;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.talent-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #6d6d6d;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .2s ease all;
+    /* background: #FCFCFD; */
+    background: #ffffffa5;
+    backdrop-filter: blur(3px);
+}
+
+.talent-group input,
+.talent-group select {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    padding: 0 15px;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    border-radius: 5px !important;
+}
+
+.talent-group select{
+    cursor: pointer;
+}
+
+.talent-text-group label {
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #6d6d6d;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .2s ease all;
+    /* background: #FCFCFD; */
+    background: #ffffffa5;
+    backdrop-filter: blur(3px);
+}
+
+.talent-text-group textarea {
+    width: 100%;
+    height: 90px !important;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid #dbdbdb;
+    outline: none;
+    border-radius: 5px !important;
+}
+
+.talent-group input:focus,
+.talent-group select:focus,
+.talent-text-group textarea:focus {
+    box-shadow: 0px 0px 2px 1px #6f6fc0;
+    border: 1px solid #6f6fc0;
+}
+
+.talent-group input:focus~label,
+.talent-group input:valid~label,
+
+.talent-group select:focus~label,
+.talent-group select:valid~label,
+
+.talent-text-group textarea:focus~label,
+.talent-text-group textarea:valid~label {
+    top: 0;
+    font-size: 12px;
+    /* background: #FCFCFD; */
+    background: #ffffffa5;
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+}
+
+
+.checkbox2-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    user-select: none;
+    position: relative; /* Ensure custom checkbox is positioned correctly */
+}
+
+/* Make the checkbox invisible but focusable and clickable */
+.checkbox2-container input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 1; /* Ensure it's still clickable */
+}
+
+/* Custom checkbox styling */
+.checkmark2 {
+    width: 20px;
+    height: 20px;
+    background-color: #eeeeee;
+    border: 1px solid #6d6d6d;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 10px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+/* Checked state styles */
+.checkbox2-container input:checked + .checkmark2 {
+    background-color: #60439a;
+    border: none;
+}
+
+/* checkmark2 animation */
+.checkmark2:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.checkbox2-container input:checked + .checkmark2:after {
+    display: block;
+    animation: checkmark2 0.3s ease forwards;
+}
+
+/* Style the checkmark2 */
+.checkmark2:after {
+    left: 7px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Add a keyframe for checkmark2 animation */
+@keyframes checkmark2 {
+    0% {
+        opacity: 0;
+        transform: scale(0) rotate(45deg);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(45deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(45deg);
+    }
+}
+
+.section-container-bg {
+
+}
