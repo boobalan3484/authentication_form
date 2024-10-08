@@ -49,6 +49,11 @@ function page() {
                     <p className='heading-desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, at corporis autem doloremque nostrum esse, quam quisquam accusantium pariatur et veritatis aspernatur adipisci eum exercitationem illo ipsum quo placeat! Repellat?</p>
                 </div>
             </div>
+            <div className="row">
+                <div className="col">
+                        
+                </div>
+            </div>
             <div className="row  form-bg-img">
                 <div className="col-12 col-md-8 mx-auto my-5 form-parent">
                     <form onSubmit={handleSubmit(onSubmit)} className='py-3'>

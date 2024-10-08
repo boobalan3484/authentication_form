@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Rubik+Wet+Paint&display=swap');
 
 .test {
     /* color:red; */
@@ -8,10 +9,15 @@
     /* border: 2px solid red; */
     /* background-image: url('../../public/image/singer_1.svg'); */
     /* background-position: center; */
-    background-color:black;
+    background-color:#101820FF;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height:auto;
+}
+.heading-desc{
+    color:white;
+    /* font-family: "Modak", system-ui;
+    font-weight: 100; */
 }
 
 .form-parent {
@@ -28,9 +34,11 @@
 
 .talent-heading {
     font-family: "Rubik Wet Paint", system-ui;
-    background: linear-gradient(to right, #002D62, #006A4E);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* background: linear-gradient(to right, #002D62, #006A4E); */
+    /* background: linear-gradient(to right, green,blue,red, green,blue,orange,red); */
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    color:#F2AA4CFF;
     position: relative;
     /* Ensure it’s positioned */
     z-index: 1;
@@ -50,13 +58,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../../public/image/dance-bg.svg');
+    background-image: url('/image/dance-bg.svg');
     background-size: cover;
     /* Adjust based on your needs */
     background-position: center;
     /* Center the image */
     opacity: 0.2;
-    border: 2px solid red;
     /* z-index: 0; Behind the content */
     /* background-color:black; */
 }
