@@ -1,3 +1,18 @@
+ 
+//  Illustrations href
+ {/* <div className='col-5 d-flex'> */}
+        {/* <iframe src="/lottie-animations/MusicPlay.svg"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/39f2bfe1-29f0-42a3-8af8-241dd05bfb55/7Z9SjqVg8h.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/e9390a48-ae5c-47e7-8931-eef3828586a1/om5Ho2E4MG.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/07429f32-f6e1-4419-bf09-3dcafeb1c1b2/mddtBqCaET.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/4a73a2dc-e313-440a-a993-c7e7db7a16c4/WYwo1sywlg.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/009d76d1-2bdf-402a-bbb3-37eb917d6f68/KUvm9yEiSP.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/edda69e8-ee00-499d-9691-af78735093cf/RQeZB3Bmzb.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/b6cf1671-7fe6-46e7-9c98-1eef1c36aa3c/Oxb32YcwRO.json"></iframe> */}
+        {/* <iframe src="https://lottie.host/embed/94f78f47-94c4-4a5c-94f7-97ff092868d8/jtK91mrIfa.json"></iframe> */}
+        {/* </div> */}
+
+
 'use client'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'

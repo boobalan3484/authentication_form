@@ -43,4 +43,55 @@ a {
   }
 } */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: #475071;
+  border: 3px solid #eef3f7;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  /* @apply bg-Track; */
+  background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+
+}
+
+
+@font-face {
+  font-family: 'IkarosLight';
+  src: url('/fonts/Ikaros-Light.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IkarosRegular';
+  src: url('/fonts/Ikaros-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AUBREY1';
+  src: url('/fonts/AUBREY1.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Now apply the font to your heading */
+.main-title {
+  font-family: 'AUBREY1', sans-serif;
+}
+
+.section-bg {
+  background-image: url('/image/bg-17.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-container-bg {
+  background: #ffffffa5;
+  backdrop-filter: blur(3px);
+}

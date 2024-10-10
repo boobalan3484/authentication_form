@@ -1,13 +1,15 @@
 import React from 'react'
-const SelectField = ({ id, name, register, options, onChange }) => {
+const SelectField = ({ id, name, register, options, className, onChange, disabled, style }) => {
     return (
         <select
             id={id}
             name={name}
             {...register}
             onChange={onChange}
-            className='text-capitalize'
             defaultValue=''
+            className={`${className} text-capitalize`}
+            style={style}
+            disabled={disabled}
             required
         >
             <option value="" disabled></option>

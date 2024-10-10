@@ -4,6 +4,8 @@ import 'rsuite/dist/rsuite-no-reset.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/styles/FormStyle.css'
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Waves from "@/components/WaveAnimation";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Authentication Form",
@@ -13,9 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="section-bg" style={{height:'100vh'}}>
+      <body className="section-bg">
+        <ParticlesBackground />
         <CustomProvider>
-          <ParticlesBackground />
           {children}
         </CustomProvider>
       </body>
